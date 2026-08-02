@@ -1,0 +1,26 @@
+{
+  "name": "yulin-agent-skills",
+  "author": "幼麟",
+  "version": "1.0.0",
+  "description": "幼麟的专属 Agent 技能库 (Antigravity, Kimi, Claude Code 通用)",
+  "skills": [
+    {
+      "id": "obsidian_archive",
+      "name": "obsidian_archive",
+      "path": "skills/obsidian_archive/SKILL.md",
+      "description": "当用户表达归档会话到 Obsidian 的意愿时触发，生成三位一体认知卡片并写入 D:\\obsidian-knows\\"
+    },
+    {
+      "id": "agent_architecture_explainer",
+      "name": "agent_architecture_explainer",
+      "path": "skills/agent_architecture_explainer/SKILL.md",
+      "description": "基于 Agent 4 步固定主循环解构任何 Agent 架构，并给出 Demo 做法 vs 工业级架构师做法四维对比"
+    },
+    {
+      "id": "claude_code_agent_design_guide",
+      "name": "claude_code_agent_design_guide",
+      "path": "skills/claude_code_agent_design_guide/SKILL.md",
+      "description": "提供 Claude Code 范式、Pi Agent 微核范式与企业私有模型 A+B 融合范式的选型与构建指南"
+    }
+  ]
+}
