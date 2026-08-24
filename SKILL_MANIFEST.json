@@ -32,42 +32,6 @@
       "name": "agy-customizations",
       "path": "skills/agy-customizations/SKILL.md",
       "description": "Antigravity 自定义体系完整指南（Skills、Rules、Plugins、Hooks、MCP Servers 及加载优先级）"
-    },
-    {
-      "id": "antigravity_guide",
-      "name": "antigravity_guide",
-      "path": "skills/antigravity_guide/SKILL.md",
-      "description": "Google Antigravity (AGY) 综合指南、CLI / IDE / SDK 快速索引与配置手册"
-    },
-    {
-      "id": "gemini-api-dev",
-      "name": "gemini-api-dev",
-      "path": "skills/gemini-api-dev/SKILL.md",
-      "description": "Gemini API 与 Gemma 4 模型开发指南（多模态、函数调用、结构化输出、各语言官方 SDK）"
-    },
-    {
-      "id": "gemini-interactions-api",
-      "name": "gemini-interactions-api",
-      "path": "skills/gemini-interactions-api/SKILL.md",
-      "description": "Gemini 官方推荐 Interactions API 开发指南（文本生成、多轮对话、流式响应、后台研究任务）"
-    },
-    {
-      "id": "gemini-live-api-dev",
-      "name": "gemini-live-api-dev",
-      "path": "skills/gemini-live-api-dev/SKILL.md",
-      "description": "Gemini Live API 实时双向音视频流式交互应用开发指南（WebSocket、VAD、原生音频、实时翻译）"
-    },
-    {
-      "id": "gemini-omni-flash-api",
-      "name": "gemini-omni-flash-api",
-      "path": "skills/gemini-omni-flash-api/SKILL.md",
-      "description": "Gemini 视频生成与编辑工作流（文本生视频、首帧动画、ffmpeg 视频预处理优化脚本）"
-    },
-    {
-      "id": "google-antigravity-sdk",
-      "name": "google-antigravity-sdk",
-      "path": "skills/google-antigravity-sdk/SKILL.md",
-      "description": "Google Antigravity (AGY) SDK 自主智能体与多智能体系统（Multi-Agent）设计与编排实战"
     }
   ]
 }

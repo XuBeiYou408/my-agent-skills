@@ -24,12 +24,6 @@
 | 2 | **`agent_architecture_explainer`** | 剖析/讲解任何 Agent 架构时 | 基于 Agent 4 步固定主循环（输入→分析→调用工具→反思容灾）进行 4 维解构，并对比 Demo 做法与工业级架构师做法 |
 | 3 | **`claude_code_agent_design_guide`** | 构思/设计/开发新 Agent 时 | 提供 Claude Code 范式、Pi Agent 极简微核范式与企业私有模型 A+B 融合范式的选型及阶梯式构建指南 |
 | 4 | **`agy-customizations`** | Antigravity 定制与扩展开发 | 深度解析 Antigravity 自定义体系（Skills、Rules、Plugins、Hooks、MCP Servers 及加载优先级机制） |
-| 5 | **`antigravity_guide`** | Antigravity 官方功能查阅与使用 | Google Antigravity (AGY) 综合指南、CLI / IDE / SDK 快速索引、Slash Commands 与环境配置手册 |
-| 6 | **`gemini-api-dev`** | Gemini & Gemma 模型应用开发 | Gemini API 与 Gemma 4 模型开发指南（多模态音视频、函数调用、结构化输出、多语言 SDK 最佳实践） |
-| 7 | **`gemini-interactions-api`** | Gemini Interactions API 开发 | Interactions API 规范（文本生成、多轮对话、流式响应、后台异步研究任务、旧版 API 迁移） |
-| 8 | **`gemini-live-api-dev`** | 实时音视频流式交互应用 | Gemini Live API 实时双向音视频流式交互开发（WebSocket、VAD 语音活动检测、原生音频、实时翻译） |
-| 9 | **`gemini-omni-flash-api`** | 视频生成与音视频处理工作流 | Gemini 视频编辑与生成（文本生视频、首帧动画、ffmpeg 视频预处理优化脚本与并行渲染） |
-| 10 | **`google-antigravity-sdk`** | 自主多智能体系统开发 | Google Antigravity (AGY) SDK 自主智能体与多智能体系统（Multi-Agent）设计、编排与调试实战 |
 
 ---
 
@@ -46,7 +40,7 @@ Agent 接收到链接后，会**全自动**执行：
 git clone https://github.com/XuBeiYou408/my-agent-skills.git
 python my-agent-skills/setup.py
 ```
-无需任何手动复制，全局人设与全部 10 个 Skill 将自动完成加载并全局生效！
+无需任何手动复制，全局人设与全部 Skill 将自动完成加载并全局生效！
 
 ---
 
