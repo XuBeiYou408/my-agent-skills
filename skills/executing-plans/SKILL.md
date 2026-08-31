@@ -1,6 +1,7 @@
 ---
 name: executing-plans
-description: Use when you have a written implementation plan to execute in a separate session with review checkpoints
+description: >-
+  当已有编写完备的实施计划（Implementation Plan）且需要在会话中按检查点逐步执行和复核时触发。
 ---
 
 # Executing Plans

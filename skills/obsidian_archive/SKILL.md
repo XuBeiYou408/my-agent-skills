@@ -1,6 +1,7 @@
 ---
 name: obsidian_archive
-description: 当用户（幼麟）表达将当前对话/研讨内容总结保存或归档到 Obsidian 的意愿时触发（例如：“总结到 Obsidian”、“保存到知识库”、“归档当前会话”等）。自动提取上下文，执行支持任意 N 级深度目录树的递归审查与复用算法，强制在模块子目录下创建全景索引卡片（中英双语专业术语 + 口语化双解构），带 YAML Frontmatter 写入 D:\obsidian-knows\ 目录。
+description: >-
+  当用户（幼麟）表达将当前对话/研讨内容总结保存或归档到 Obsidian 的意愿时触发（例如：“总结到 Obsidian”、“保存到知识库”、“归档当前会话”等）。自动提取上下文，执行支持任意 N 级深度目录树的递归审查与复用算法，强制在模块子目录下创建全景索引卡片（中英双语专业术语 + 口语化双解构），带 YAML Frontmatter 写入 D:\obsidian-knows\ 目录。
 ---
 
 # Obsidian 会话自动归档技能 (Obsidian Archive Skill)

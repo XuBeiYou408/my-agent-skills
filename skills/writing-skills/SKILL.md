@@ -1,6 +1,7 @@
 ---
 name: writing-skills
-description: Use when creating new skills, editing existing skills, or verifying skills work before deployment
+description: >-
+  当需要创建新 Skill、修改现有 Skill 或在部署前验证 Skill 有效性时触发。提供专业的 Skill 架构规范与最佳实践。
 ---
 
 # Writing Skills

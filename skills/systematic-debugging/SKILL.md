@@ -1,6 +1,7 @@
 ---
 name: systematic-debugging
-description: Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
+description: >-
+  当遇到任何 Bug、测试失败或异常非预期行为时触发。在提出任何修复方案前，强制执行系统化四阶段根因诊断，杜绝盲目修补。
 ---
 
 # Systematic Debugging
