@@ -1,7 +1,7 @@
 ---
 name: systematic-debugging
 description: >-
-  当遇到任何 Bug、测试失败或异常非预期行为时触发。在提出任何修复方案前，强制执行系统化四阶段根因诊断，杜绝盲目修补。
+  当遇到任何 Bug、测试失败、报错崩溃，或用户说“debug”、“帮我修个bug”、“排查报错”、“抛出异常”、“为什么会崩”、“定位问题”时必须触发。强制在提出任何修复代码前，必须先构建一个能稳定复现红灯的单行验证命令，严禁直接看代码猜原因。
 ---
 
 # Systematic Debugging
@@ -56,11 +56,10 @@ You MUST complete each phase before proceeding to the next.
    - Read stack traces completely
    - Note line numbers, file paths, error codes
 
-2. **Reproduce Consistently**
-   - Can you trigger it reliably?
-   - What are the exact steps?
-   - Does it happen every time?
-   - If not reproducible → gather more data, don't guess
+2. **Reproduce Consistently with a Tight Red Command (核心硬门禁)**
+   - **Hard Gate**: You MUST establish ONE single runnable command (test runner, curl, PowerShell script, or CLI invocation) that you have **already executed at least once** and that goes RED (reproduces the failure predictably).
+   - **STOP Condition**: If you catch yourself reading source code to guess a cause before this red command exists, **STOP IMMEDIATELY**. Jumping straight to a theory without a red-capable command is the exact failure this skill prevents.
+   - If flaky or non-deterministic: loop the test command multiple times (e.g. `1..20 | % { ... }`) to increase reproduction rate before theorizing.
 
 3. **Check Recent Changes**
    - What changed that could cause this?
@@ -150,10 +149,11 @@ You MUST complete each phase before proceeding to the next.
    - Write it down
    - Be specific, not vague
 
-2. **Test Minimally**
-   - Make the SMALLEST possible change to test hypothesis
-   - One variable at a time
-   - Don't fix multiple things at once
+2. **Test Minimally & Use Tagged Probes (唯一标签插桩)**
+   - Make the SMALLEST possible change to test hypothesis. One variable at a time.
+   - If adding debug logs or print statements, **tag every probe with a unique prefix**, e.g. `[DEBUG-a1b2]`.
+   - This ensures all temporary probes can be found and eradicated with a single grep before finishing.
+   - Don't fix multiple things at once.
 
 3. **Verify Before Continuing**
    - Did it work? Yes → Phase 4

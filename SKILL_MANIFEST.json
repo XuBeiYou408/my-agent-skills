@@ -1,7 +1,7 @@
 {
   "name": "yulin-agent-skills",
   "author": "幼麟",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "幼麟的专属 Agent 技能库与全局人设规范 (Antigravity, Gemini, Kimi, Claude Code 通用)",
   "persona": {
     "file": "GEMINI.md",
@@ -19,7 +19,7 @@
       "id": "agy-customizations",
       "name": "agy-customizations",
       "path": "skills/agy-customizations/SKILL.md",
-      "description": "Antigravity 自定义与扩展体系全景指南。当需要了解、配置或编写 Skills、Rules、Plugins、Hooks、MCP Servers 及其加载优先级与发现机制时触发。"
+      "description": "Comprehensive guide and reference for the Antigravity Customization System. Use to explain how customizations work, their loading priority, discovery mechanisms, and to guide the creation of skills, rules, plugins, hooks, and MCP servers."
     },
     {
       "id": "archify",
@@ -31,7 +31,7 @@
       "id": "brainstorming",
       "name": "brainstorming",
       "path": "skills/brainstorming/SKILL.md",
-      "description": "在进行任何创意构思、新功能原型设计、行为变更或组件规划前必须触发。用于在动手写代码前深入探索用户真实意图、明确需求边界与架构方案。"
+      "description": "在用户提出新功能构思、架构设计、技术选型，或用户说“聊聊方案”、“先别写代码”、“考考我”、“grill me”、“反向提问”、“理清逻辑”、“头脑风暴”时必须触发。强制在动手写代码前，通过设计树（Design Tree）与结构化问答（Q1/Q2）深度审讯需求与边界，未通过审批前严禁触碰业务代码。"
     },
     {
       "id": "claude_code_agent_design_guide",
@@ -64,10 +64,16 @@
       "description": "“写代码前，先去 GitHub 抄作业”——前置尽职调查与开源对标 Skill。杜绝 AI 闭门造车和盲目自创“方形轮子”。当用户提出新项目开发、新功能构想、技术选型、架构设计，或表达“我要做个...”、“帮我开发...”、“先调研一下”、“去 GitHub 看看”、“抄作业”、“找开源参考”时自动激活。强制在编写任何一行代码前，先通过 GitHub/开源调研提炼真实验证过的方案、踩坑历史与设计取舍，输出【选型、架构、MVP范围、开发顺序】四件套并等待确认。"
     },
     {
+      "id": "grill-me",
+      "name": "grill-me",
+      "path": "skills/grill-me/SKILL.md",
+      "description": "当用户提出任何方案、架构想法、产品构想，或用户说“grill me”、“考考我”、“反向提问”、“审讯我”、“挑挑刺”、“对齐需求”、“理清边界”、“先别写代码”以及在聊天中输入 /grill-me 时必须触发。通过严酷、穷尽的结构化问答盘问用户，直到理清设计树的所有分支。"
+    },
+    {
       "id": "impeccable_taste_frontend",
       "name": "impeccable_taste_frontend",
       "path": "skills/impeccable_taste_frontend/SKILL.md",
-      "description": "当用户提出任何前端开发、UI/UX 设计、页面编写、界面重构、视觉样式走查、细节打磨、品牌看板/生图提示词生成、参考图复刻或口语化设计需求时触发。深度融合 Taste-Skill（反劣质模板审美注入、风格预设、生图提示词、旋钮参数）与 Impeccable（设计语义工程与 59 条反模式防御）。无需用户记忆任何斜杠命令，自动将口语化自然语言精准映射到底层 23 维设计工程指令与审美参数，输出工业级高审美前端代码。"
+      "description": ""
     },
     {
       "id": "obsidian_archive",
@@ -109,13 +115,13 @@
       "id": "systematic-debugging",
       "name": "systematic-debugging",
       "path": "skills/systematic-debugging/SKILL.md",
-      "description": "当遇到任何 Bug、测试失败或异常非预期行为时触发。在提出任何修复方案前，强制执行系统化四阶段根因诊断，杜绝盲目修补。"
+      "description": "当遇到任何 Bug、测试失败、报错崩溃，或用户说“debug”、“帮我修个bug”、“排查报错”、“抛出异常”、“为什么会崩”、“定位问题”时必须触发。强制在提出任何修复代码前，必须先构建一个能稳定复现红灯的单行验证命令，严禁直接看代码猜原因。"
     },
     {
       "id": "test-driven-development",
       "name": "test-driven-development",
       "path": "skills/test-driven-development/SKILL.md",
-      "description": "在实现任何新功能、重构或修复 Bug 时触发。严格执行 TDD 测试驱动开发（先写失败测试，再写最小通过代码，最后重构）。"
+      "description": "当用户要求编写代码、实现新功能、重构模块、修复 Bug，或用户提到“TDD”、“测试驱动”、“先写测试”、“写单测”、“按测试写”、“red-green-refactor”时必须触发。严格遵循红-绿-重构循环，先构造失败测试（红），再写最小代码使其通过（绿），最后重构。"
     },
     {
       "id": "using-git-worktrees",
@@ -134,6 +140,12 @@
       "name": "verification-before-completion",
       "path": "skills/verification-before-completion/SKILL.md",
       "description": "在宣称任务完成、修复成功或提交 PR 之前触发。强制运行验证命令并核验确凿证据，坚决杜绝无证据的主观臆断。"
+    },
+    {
+      "id": "viral-video-cover-designer",
+      "name": "viral-video-cover-designer",
+      "path": "skills/viral-video-cover-designer/SKILL.md",
+      "description": "当用户提供实拍素材、视频文案、或仅提供新闻报道/推特/博客链接时触发。支持自动抓取网页内容、提炼跑分爆点，生成适用于 B站、小红书、视频号、YouTube 的高点击率视频封面与全通用生图提示词。"
     },
     {
       "id": "writing-plans",

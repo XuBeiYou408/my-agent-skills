@@ -1,7 +1,7 @@
 ---
 name: brainstorming
 description: >-
-  在进行任何创意构思、新功能原型设计、行为变更或组件规划前必须触发。用于在动手写代码前深入探索用户真实意图、明确需求边界与架构方案。
+  在用户提出新功能构思、架构设计、技术选型，或用户说“聊聊方案”、“先别写代码”、“考考我”、“grill me”、“反向提问”、“理清逻辑”、“头脑风暴”时必须触发。强制在动手写代码前，通过设计树（Design Tree）与结构化问答（Q1/Q2）深度审讯需求与边界，未通过审批前严禁触碰业务代码。
 ---
 
 # Brainstorming Ideas Into Designs
@@ -162,15 +162,22 @@ spike stops at "present the probe, get a nod"). Sections from
 bounded work, context plus a few questions plus a short in-chat design
 is the whole process.
 
-**Understanding the idea:**
+**Understanding the idea (Grilling & Design Tree):**
 
-- Check out the current project state first (files, docs, recent commits)
-- Before asking detailed questions, assess scope: if the request describes multiple independent subsystems (e.g., "build a platform with chat, file storage, billing, and analytics"), flag this immediately. Don't spend questions refining details of a project that needs to be decomposed first.
-- If the project is too large for a single spec, help the user decompose into sub-projects: what are the independent pieces, how do they relate, what order should they be built? Then brainstorm the first sub-project through the normal design flow. Each sub-project gets its own spec → plan → implementation cycle.
-- For appropriately-scoped projects, ask questions one at a time to refine the idea
-- Prefer multiple choice questions when possible, but open-ended is fine too
-- Only one question per message - if a topic needs more exploration, break it into multiple questions
-- Focus on understanding: purpose, constraints, success criteria
+- **Explore facts yourself first:** Check existing codebase (files, docs, recent commits, callers). *Finding facts is YOUR job, never the user's.* Don't ask the user what you can look up yourself.
+- **Assess scope:** If the request describes multiple independent subsystems, flag this immediately and help decompose before asking detailed questions.
+- **Map the Design Tree & Frontier:**
+  - View the plan as a **Design Tree**: every foundational decision branches into subsequent decisions.
+  - The **Frontier** contains all decisions whose prerequisites are settled, and which can be asked *now* without guessing.
+- **Work in Structured Rounds (轮次推进):**
+  - Don't ask loose, open-ended chit-chat. Present the whole frontier in structured format with numbered questions, concrete options, and your architectural recommendation:
+  ```markdown
+  ❓ **Q1** - **<Decision Title>**: <Context/Impact, followed by 2-3 concrete options (A, B, C)>
+  ➡️ **Recommended Answer & Reason**: <Option X, because...>
+  ---
+  ❓ **Q2** - **<Decision Title>**: ...
+  ```
+- **Stop Condition:** The grilling loop is complete ONLY when the frontier is empty (all branches visited, zero hidden assumptions). Wait for user approval before moving to design presentation.
 
 **Exploring approaches:**
 

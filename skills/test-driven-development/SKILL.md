@@ -1,7 +1,7 @@
 ---
 name: test-driven-development
 description: >-
-  在实现任何新功能、重构或修复 Bug 时触发。严格执行 TDD 测试驱动开发（先写失败测试，再写最小通过代码，最后重构）。
+  当用户要求编写代码、实现新功能、重构模块、修复 Bug，或用户提到“TDD”、“测试驱动”、“先写测试”、“写单测”、“按测试写”、“red-green-refactor”时必须触发。严格遵循红-绿-重构循环，先构造失败测试（红），再写最小代码使其通过（绿），最后重构。
 ---
 
 # Test-Driven Development (TDD)

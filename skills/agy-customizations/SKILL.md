@@ -1,7 +1,9 @@
 ---
 name: agy-customizations
 description: >-
-  Antigravity 自定义与扩展体系全景指南。当需要了解、配置或编写 Skills、Rules、Plugins、Hooks、MCP Servers 及其加载优先级与发现机制时触发。
+  Comprehensive guide and reference for the Antigravity Customization System.
+  Use to explain how customizations work, their loading priority, discovery mechanisms,
+  and to guide the creation of skills, rules, plugins, hooks, and MCP servers.
 ---
 
 # Antigravity Customization System Guide
@@ -30,8 +32,9 @@ Type            | Config File/Folder           | Scope                     | Bes
 
 ## Customization Discovery and Locations
 
-Antigravity automatically discovers customizations by traversing specific
-directories.
+Antigravity automatically discovers your own customizations by traversing
+specific directories. Built-in customizations are not found this way: the agent
+config names the ones it mounts.
 
 ### Discovery Locations
 
@@ -65,7 +68,8 @@ The priority order (from highest to lowest) is:
 2.  **Declared Configurations**: Customizations explicitly listed in
     `skills.json` or `plugins.json` in your workspace.
 3.  **Global Discovery**: `~/.gemini/config/`
-4.  **Built-in Customizations**: Default skills bundled with the application.
+4.  **Built-in Customizations**: Default skills bundled with the application,
+    mounted by name rather than discovered.
 5.  **Global Declared Configurations**: Explicitly listed in global JSON
     configs.
 

@@ -28,8 +28,8 @@ Then announce "Using [skill] to [purpose]" and follow the skill exactly. If it h
 
 When multiple skills apply, process skills come first — they set the approach, then implementation skills (frontend-design, etc.) carry it out. Brainstorming and systematic-debugging are Superpowers' most common process skills, but the rule holds for any of them.
 
-- "Let's build X" → superpowers:brainstorming first, then implementation skills.
-- "Fix this bug" → superpowers:systematic-debugging first, then domain skills.
+- "Let's build X" / "聊聊方案 / 对齐需求" → superpowers:grill-me 或 superpowers:brainstorming 优先进行反向审讯，穷尽设计树，再进入实现；
+- "Fix this bug" / "报错排查" → superpowers:systematic-debugging first, then domain skills.
 
 ## Red Flags
 
