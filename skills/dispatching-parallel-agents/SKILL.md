@@ -1,7 +1,7 @@
 ---
 name: dispatching-parallel-agents
 description: >-
-  当面临 2 个及以上没有状态共享或时序依赖的独立任务时触发，用于并行分发多个子 Agent 协同加速执行。
+  面临两个及以上没有状态共享或时序依赖的独立任务时触发，用于并行分发多个子智能体协同加速执行。
 ---
 
 # Dispatching Parallel Agents

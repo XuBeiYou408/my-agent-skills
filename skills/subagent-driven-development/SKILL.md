@@ -1,7 +1,7 @@
 ---
 name: subagent-driven-development
 description: >-
-  当执行包含多个独立任务的复杂实施计划时触发。通过在当前会话中驱动专属子 Agent 分工协作完成开发。
+  执行包含多个独立任务的复杂实施计划时触发。通过在当前会话中驱动专属子智能体分工协作推进开发。
 ---
 
 # Subagent-Driven Development

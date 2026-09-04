@@ -1,9 +1,7 @@
 ---
 name: agy-customizations
 description: >-
-  Comprehensive guide and reference for the Antigravity Customization System.
-  Use to explain how customizations work, their loading priority, discovery mechanisms,
-  and to guide the creation of skills, rules, plugins, hooks, and MCP servers.
+  自定义与扩展体系全景指南。用于全面解析智能体扩展机制、加载优先级与自动发现机制，指导编写自定义技能、行为规则、插件、钩子与外部工具服务。
 ---
 
 # Antigravity Customization System Guide

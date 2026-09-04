@@ -13,151 +13,151 @@
       "id": "agent_architecture_explainer",
       "name": "agent_architecture_explainer",
       "path": "skills/agent_architecture_explainer/SKILL.md",
-      "description": "仅在用户要求对具体的 Agent 架构项目、开源 Agent 仓库、Agent 代码实现或系统工程进行深度分析、代码解构、架构走查与工程评估时触发。严格基于【Agent 4 步固定主循环（输入→分析→调用工具→反思容灾）】进行 4 维工程优化与安全防御拆解，并配合【Demo 开发者做法 vs 专业架构师做法】进行深度剖析。"
+      "description": "对具体的智能体架构项目、开源仓库、代码实现或系统工程进行深度剖析、代码解构、架构走查与工程评估。严格基于智能体核心主循环（输入、分析、工具调用、反思容灾）进行多维工程优化与安全防御拆解，深度对比初学者做法与专业架构师做法。"
     },
     {
       "id": "agy-customizations",
       "name": "agy-customizations",
       "path": "skills/agy-customizations/SKILL.md",
-      "description": "Comprehensive guide and reference for the Antigravity Customization System. Use to explain how customizations work, their loading priority, discovery mechanisms, and to guide the creation of skills, rules, plugins, hooks, and MCP servers."
+      "description": "自定义与扩展体系全景指南。用于全面解析智能体扩展机制、加载优先级与自动发现机制，指导编写自定义技能、行为规则、插件、钩子与外部工具服务。"
     },
     {
       "id": "archify",
       "name": "archify",
       "path": "skills/archify/SKILL.md",
-      "description": "当用户需要对代码仓库进行架构全景分析、生成高保真交互式系统地图（System Map）、绘制复杂时序调用链（Sequence）、评估重构影响面（Blast Radius/Reach Tracing）、或准备发布项目并在自述文档（README.md）中嵌入高颜值架构封面图时触发。"
+      "description": "对代码仓库进行架构全景分析、生成高保真交互式系统全景图、绘制复杂时序调用链、评估重构影响扩散面，或为项目自述文档生成美观专业的架构图。"
     },
     {
       "id": "brainstorming",
       "name": "brainstorming",
       "path": "skills/brainstorming/SKILL.md",
-      "description": "在用户提出新功能构思、架构设计、技术选型，或用户说“聊聊方案”、“先别写代码”、“考考我”、“grill me”、“反向提问”、“理清逻辑”、“头脑风暴”时必须触发。强制在动手写代码前，通过设计树（Design Tree）与结构化问答（Q1/Q2）深度审讯需求与边界，未通过审批前严禁触碰业务代码。"
+      "description": "在提出新功能构思、架构设计、技术选型，或提出“聊聊方案”、“先别写代码”、“考考我”、“反向提问”、“理清逻辑”、“头脑风暴”时触发。在动手写代码前，通过设计树与结构化轮次问答深度审讯需求与边界，未通过审批前严禁触碰业务代码。"
     },
     {
       "id": "claude_code_agent_design_guide",
       "name": "claude_code_agent_design_guide",
       "path": "skills/claude_code_agent_design_guide/SKILL.md",
-      "description": "当用户准备设计、架构或构建新的 Agent 系统时，主动对比并推荐 Claude Code 垂直一体化架构、Pi Agent 极简微核架构以及企业私有模型 A+B 融合架构，根据需求给出推荐理据，待用户确认后引导一步步拆解构建。"
+      "description": "设计、架构或构建新的智能体系统时触发。主动对比并推荐垂直一体化架构、极简微核架构以及企业私有模型融合架构，根据实际需求给出选型理据并引导分步拆解构建。"
     },
     {
       "id": "dispatching-parallel-agents",
       "name": "dispatching-parallel-agents",
       "path": "skills/dispatching-parallel-agents/SKILL.md",
-      "description": "当面临 2 个及以上没有状态共享或时序依赖的独立任务时触发，用于并行分发多个子 Agent 协同加速执行。"
+      "description": "面临两个及以上没有状态共享或时序依赖的独立任务时触发，用于并行分发多个子智能体协同加速执行。"
     },
     {
       "id": "executing-plans",
       "name": "executing-plans",
       "path": "skills/executing-plans/SKILL.md",
-      "description": "当已有编写完备的实施计划（Implementation Plan）且需要在会话中按检查点逐步执行和复核时触发。"
+      "description": "已有编写完备的实施计划，且需要在会话中按照关键检查点逐步执行、验证与复核时触发。"
     },
     {
       "id": "finishing-a-development-branch",
       "name": "finishing-a-development-branch",
       "path": "skills/finishing-a-development-branch/SKILL.md",
-      "description": "当代码实现已完成、所有测试均已通过，需要收尾、合并开发分支、清理工作区或决定如何集成代码时触发。"
+      "description": "代码实现已完成且所有测试均已通过，需要收尾、合并开发分支、清理工作区或确定代码集成方式时触发。"
     },
     {
       "id": "github_homework_researcher",
       "name": "github_homework_researcher",
       "path": "skills/github_homework_researcher/SKILL.md",
-      "description": "“写代码前，先去 GitHub 抄作业”——前置尽职调查与开源对标 Skill。杜绝 AI 闭门造车和盲目自创“方形轮子”。当用户提出新项目开发、新功能构想、技术选型、架构设计，或表达“我要做个...”、“帮我开发...”、“先调研一下”、“去 GitHub 看看”、“抄作业”、“找开源参考”时自动激活。强制在编写任何一行代码前，先通过 GitHub/开源调研提炼真实验证过的方案、踩坑历史与设计取舍，输出【选型、架构、MVP范围、开发顺序】四件套并等待确认。"
+      "description": "“写代码前先调研开源优秀实践”——前置尽职调查与开源对标。杜绝闭门造车与盲目自创。在编写任何代码前，先通过开源生态调研提炼经受过验证的方案、避坑经验与设计权衡，输出技术选型、系统架构、最小可用范围与开发顺序建议。"
     },
     {
       "id": "grill-me",
       "name": "grill-me",
       "path": "skills/grill-me/SKILL.md",
-      "description": "当用户提出任何方案、架构想法、产品构想，或用户说“grill me”、“考考我”、“反向提问”、“审讯我”、“挑挑刺”、“对齐需求”、“理清边界”、“先别写代码”以及在聊天中输入 /grill-me 时必须触发。通过严酷、穷尽的结构化问答盘问用户，直到理清设计树的所有分支。"
+      "description": "提出方案想法、构思规划，或提出“考考我”、“反向提问”、“审讯我”、“挑挑刺”、“对齐需求”、“理清边界”、“先别急着写代码”时触发。通过严谨穷尽的设计树算法与结构化轮次问答反向盘问，直到厘清所有分支与隐藏假设。"
     },
     {
       "id": "impeccable_taste_frontend",
       "name": "impeccable_taste_frontend",
       "path": "skills/impeccable_taste_frontend/SKILL.md",
-      "description": ""
+      "description": "涵盖前端开发、界面设计、页面重构、视觉走查、细节打磨、品牌看板生成与高审美复刻。无需记忆复杂命令，自动将日常口语精准映射为高阶设计工程指令与审美参数，输出工业级高质感前端代码。"
     },
     {
       "id": "obsidian_archive",
       "name": "obsidian_archive",
       "path": "skills/obsidian_archive/SKILL.md",
-      "description": "当用户（幼麟）表达将当前对话/研讨内容总结保存或归档到 Obsidian 的意愿时触发（例如：“总结到 Obsidian”、“保存到知识库”、“归档当前会话”等）。自动提取上下文，执行支持任意 N 级深度目录树的递归审查与复用算法，强制在模块子目录下创建全景索引卡片（中英双语专业术语 + 口语化双解构），带 YAML Frontmatter 写入 D:\\obsidian-knows\\ 目录。"
+      "description": "将当前对话、技术研讨或方案成果归档至个人知识库。自动提取上下文脉络，支持多级目录树的递归审查与卡片复用，在模块目录下生成结构化全景索引卡片与双语解构沉淀。"
     },
     {
       "id": "ponytail",
       "name": "ponytail",
       "path": "skills/ponytail/SKILL.md",
-      "description": "极简资深架构师（Ponytail·懒人架构）思维注入 Skill。杜绝 AI 过度设计、画蛇添足、滥装三方依赖与样板代码膨胀。严格执行 7 阶极简决策天梯（YAGNI -> 现有代码复用 -> 标准库 -> 平台原生特性 -> 现有依赖 -> 单行代码 -> 最小可用代码）。在用户提出编码、重构、修Bug、选型或表达“写简单点”、“别过度设计”、“YAGNI”、“最简实现”、“不要引新包”、“单行解决”时自动激活。"
+      "description": "极简资深架构师思维注入。坚决杜绝过度设计、画蛇添足、滥装第三方依赖与冗余样板代码。严格执行七阶极简决策天梯（必要性裁剪、现有代码复用、语言标准库优先、原生特性优先、现有依赖复用、单行精简、最小可用代码）。在编码、重构、排错时输出最简可用代码。"
     },
     {
       "id": "receiving-code-review",
       "name": "receiving-code-review",
       "path": "skills/receiving-code-review/SKILL.md",
-      "description": "当收到代码审查（Code Review）反馈时触发。在实施修改建议前进行技术严谨性与合理性验证，坚决杜绝盲目迎合或无脑修改。"
+      "description": "收到代码审查反馈时触发。在实施修改建议前进行严谨的技术合理性核验，坚决杜绝盲目迎合或无脑修改。"
     },
     {
       "id": "requesting-code-review",
       "name": "requesting-code-review",
       "path": "skills/requesting-code-review/SKILL.md",
-      "description": "当完成重大功能开发、核心任务交付或准备合并分支前触发。用于发起严格的代码审查，验证代码是否完全符合设计规范与质量要求。"
+      "description": "完成重大功能开发、核心任务交付或准备合并分支前触发。发起严格的代码审查，验证实现是否完全契合设计契约与质量规范。"
     },
     {
       "id": "safe_code_repair",
       "name": "safe_code_repair",
       "path": "skills/safe_code_repair/SKILL.md",
-      "description": "当需要修改项目中代码、排查与修复 Bug、或进行缺陷诊断修复时触发。强制执行“工作区状态与安全前置、纯读诊断复现、三因分析范围锁死、用户确认最小改动、双轨回归与可回滚验证”的高可靠闭环流程。"
+      "description": "修改现有代码、排查与修复缺陷时触发。强制执行工作区安全前置、纯只读诊断复现、多因分析范围锁死、最小改动确认、双轨回归测试与一键回滚验证的高可靠闭环流程。"
     },
     {
       "id": "subagent-driven-development",
       "name": "subagent-driven-development",
       "path": "skills/subagent-driven-development/SKILL.md",
-      "description": "当执行包含多个独立任务的复杂实施计划时触发。通过在当前会话中驱动专属子 Agent 分工协作完成开发。"
+      "description": "执行包含多个独立任务的复杂实施计划时触发。通过在当前会话中驱动专属子智能体分工协作推进开发。"
     },
     {
       "id": "systematic-debugging",
       "name": "systematic-debugging",
       "path": "skills/systematic-debugging/SKILL.md",
-      "description": "当遇到任何 Bug、测试失败、报错崩溃，或用户说“debug”、“帮我修个bug”、“排查报错”、“抛出异常”、“为什么会崩”、“定位问题”时必须触发。强制在提出任何修复代码前，必须先构建一个能稳定复现红灯的单行验证命令，严禁直接看代码猜原因。"
+      "description": "遇到程序错误、测试失败、报错崩溃或逻辑异常时触发。在提出任何修改前，强制先构建一个能稳定复现失败的单行验证命令，精准定位根因，严禁凭空盲猜。"
     },
     {
       "id": "test-driven-development",
       "name": "test-driven-development",
       "path": "skills/test-driven-development/SKILL.md",
-      "description": "当用户要求编写代码、实现新功能、重构模块、修复 Bug，或用户提到“TDD”、“测试驱动”、“先写测试”、“写单测”、“按测试写”、“red-green-refactor”时必须触发。严格遵循红-绿-重构循环，先构造失败测试（红），再写最小代码使其通过（绿），最后重构。"
+      "description": "实现新功能、重构模块或修复缺陷时触发。严格遵循红绿重构循环：先编写最小失败测试验证缺陷，再编写最小通过代码，最后完成重构优化。"
     },
     {
       "id": "using-git-worktrees",
       "name": "using-git-worktrees",
       "path": "skills/using-git-worktrees/SKILL.md",
-      "description": "当开启需要与当前工作区分离的独立功能开发，或在执行实施计划前触发。通过 Git Worktree 创建物理隔离的工作目录，避免代码污染。"
+      "description": "开启需要与当前工作区分离的独立分支开发时触发。通过多工作树创建物理隔离的工作目录，彻底避免本地未提交代码受到污染。"
     },
     {
       "id": "using-superpowers",
       "name": "using-superpowers",
       "path": "skills/using-superpowers/SKILL.md",
-      "description": "在开始任何对话或任务时触发。建立技能优先调度机制，强制在执行任何操作或回答前优先检索并激活匹配的专业 Skill。"
+      "description": "在处理任务时触发。建立技能优先调度机制，在执行任何实质操作前优先检索并激活匹配的专业技能。"
     },
     {
       "id": "verification-before-completion",
       "name": "verification-before-completion",
       "path": "skills/verification-before-completion/SKILL.md",
-      "description": "在宣称任务完成、修复成功或提交 PR 之前触发。强制运行验证命令并核验确凿证据，坚决杜绝无证据的主观臆断。"
+      "description": "在宣称任务完成、修复成功或准备提交合并前触发。强制运行客观验证命令并核查确凿证据，坚决杜绝无证据的主观臆断。"
     },
     {
       "id": "viral-video-cover-designer",
       "name": "viral-video-cover-designer",
       "path": "skills/viral-video-cover-designer/SKILL.md",
-      "description": "当用户提供实拍素材、视频文案、或仅提供新闻报道/推特/博客链接时触发。支持自动抓取网页内容、提炼跑分爆点，生成适用于 B站、小红书、视频号、YouTube 的高点击率视频封面与全通用生图提示词。"
+      "description": "根据素材、文案或资讯链接生成高点击率视频封面构想与生图提示词。提炼核心视觉爆点，生成适配主流视频与社交平台的封面方案。"
     },
     {
       "id": "writing-plans",
       "name": "writing-plans",
       "path": "skills/writing-plans/SKILL.md",
-      "description": "当面对多步骤复杂任务且已有明确规范或需求时触发。在触碰任何代码前，编写结构化、可执行的高质量实施计划。"
+      "description": "面对多步骤复杂工程任务且已有明确需求时触发。在修改任何代码前，编写结构清晰、可落地执行的高质量实施计划。"
     },
     {
       "id": "writing-skills",
       "name": "writing-skills",
       "path": "skills/writing-skills/SKILL.md",
-      "description": "当需要创建新 Skill、修改现有 Skill 或在部署前验证 Skill 有效性时触发。提供专业的 Skill 架构规范与最佳实践。"
+      "description": "创建新技能、修改现有技能或在部署前验证技能有效性时触发。提供专业的技能架构设计规范与最佳实践指导。"
     }
   ]
 }

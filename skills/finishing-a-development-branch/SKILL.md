@@ -1,7 +1,7 @@
 ---
 name: finishing-a-development-branch
 description: >-
-  当代码实现已完成、所有测试均已通过，需要收尾、合并开发分支、清理工作区或决定如何集成代码时触发。
+  代码实现已完成且所有测试均已通过，需要收尾、合并开发分支、清理工作区或确定代码集成方式时触发。
 ---
 
 # Finishing a Development Branch

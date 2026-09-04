@@ -1,7 +1,7 @@
 ---
 name: verification-before-completion
 description: >-
-  在宣称任务完成、修复成功或提交 PR 之前触发。强制运行验证命令并核验确凿证据，坚决杜绝无证据的主观臆断。
+  在宣称任务完成、修复成功或准备提交合并前触发。强制运行客观验证命令并核查确凿证据，坚决杜绝无证据的主观臆断。
 ---
 
 # Verification Before Completion

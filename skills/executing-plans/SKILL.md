@@ -1,7 +1,7 @@
 ---
 name: executing-plans
 description: >-
-  当已有编写完备的实施计划（Implementation Plan）且需要在会话中按检查点逐步执行和复核时触发。
+  已有编写完备的实施计划，且需要在会话中按照关键检查点逐步执行、验证与复核时触发。
 ---
 
 # Executing Plans

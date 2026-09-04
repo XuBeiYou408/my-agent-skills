@@ -1,7 +1,7 @@
 ---
 name: archify
 description: >-
-  当用户需要对代码仓库进行架构全景分析、生成高保真交互式系统地图（System Map）、绘制复杂时序调用链（Sequence）、评估重构影响面（Blast Radius/Reach Tracing）、或准备发布项目并在自述文档（README.md）中嵌入高颜值架构封面图时触发。
+  对代码仓库进行架构全景分析、生成高保真交互式系统全景图、绘制复杂时序调用链、评估重构影响扩散面，或为项目自述文档生成美观专业的架构图。
 ---
 
 # Archify 交互式系统地图智能感知与工程规范 (Autonomous Archify Engineering Protocol)

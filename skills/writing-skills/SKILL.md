@@ -1,7 +1,7 @@
 ---
 name: writing-skills
 description: >-
-  当需要创建新 Skill、修改现有 Skill 或在部署前验证 Skill 有效性时触发。提供专业的 Skill 架构规范与最佳实践。
+  创建新技能、修改现有技能或在部署前验证技能有效性时触发。提供专业的技能架构设计规范与最佳实践指导。
 ---
 
 # Writing Skills

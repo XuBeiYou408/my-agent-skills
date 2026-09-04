@@ -1,7 +1,7 @@
 ---
 name: using-git-worktrees
 description: >-
-  当开启需要与当前工作区分离的独立功能开发，或在执行实施计划前触发。通过 Git Worktree 创建物理隔离的工作目录，避免代码污染。
+  开启需要与当前工作区分离的独立分支开发时触发。通过多工作树创建物理隔离的工作目录，彻底避免本地未提交代码受到污染。
 ---
 
 # Using Git Worktrees
