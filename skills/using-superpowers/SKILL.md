@@ -1,7 +1,7 @@
 ---
 name: using-superpowers
 description: >-
-  在处理任务时触发。建立技能优先调度机制，在执行任何实质操作前优先检索并激活匹配的专业技能。
+  在处理任务时触发。建立技能优先调度机制，在执行任何实质操作前优先检索并激活匹配的专业技能；深度联动交付流水线，保障复杂工程链式收敛。
 ---
 
 <SUBAGENT-STOP>
@@ -30,6 +30,7 @@ When multiple skills apply, process skills come first — they set the approach,
 
 - "Let's build X" / "聊聊方案 / 对齐需求" → superpowers:grill-me 或 superpowers:brainstorming 优先进行反向审讯，穷尽设计树，再进入实现；
 - "Fix this bug" / "报错排查" → superpowers:systematic-debugging first, then domain skills.
+- 完整软件功能 / 全栈应用 / 数据库演进 / 复杂重构等**交付级需求** → superpowers:engineering-delivery-pipeline 优先，由它自动编排全链（审讯→调研→计划→TDD→核验→收尾，两处人工确认）；纯概念咨询、命令查询、≤10 行微调不进入。
 
 ## Red Flags
 

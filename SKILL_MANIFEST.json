@@ -1,7 +1,7 @@
 {
   "name": "yulin-agent-skills",
   "author": "幼麟",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "幼麟的专属 Agent 技能库与全局人设规范 (Antigravity, Gemini, Kimi, Claude Code 通用)",
   "persona": {
     "file": "GEMINI.md",
@@ -22,6 +22,12 @@
       "description": "自定义与扩展体系全景指南。用于全面解析智能体扩展机制、加载优先级与自动发现机制，指导编写自定义技能、行为规则、插件、钩子与外部工具服务。"
     },
     {
+      "id": "antigravity-guide",
+      "name": "antigravity-guide",
+      "path": "skills/antigravity-guide/SKILL.md",
+      "description": "Google Antigravity (AGY) 全景架构与官方索引指南。涵盖 Antigravity CLI (agy)、Antigravity 2.0 桌面端、Antigravity IDE、Python SDK、斜杠快捷指令与各类扩展配置，提供官方核心文档离线索引与动态导流。"
+    },
+    {
       "id": "archify",
       "name": "archify",
       "path": "skills/archify/SKILL.md",
@@ -40,10 +46,34 @@
       "description": "设计、架构或构建新的智能体系统时触发。主动对比并推荐垂直一体化架构、极简微核架构以及企业私有模型融合架构，根据实际需求给出选型理据并引导分步拆解构建。"
     },
     {
+      "id": "database-migrations",
+      "name": "database-migrations",
+      "path": "skills/database-migrations/SKILL.md",
+      "description": "涉及数据库表结构变更、字段增删、索引调整、数据平滑迁移或实施零停机（Zero-Downtime）部署时触发。指导无锁变更、双写迁移、展开-收缩模式及主流 ORM（Prisma, TypeORM, Drizzle, Django, golang-migrate）最佳实践。"
+    },
+    {
       "id": "dispatching-parallel-agents",
       "name": "dispatching-parallel-agents",
       "path": "skills/dispatching-parallel-agents/SKILL.md",
       "description": "面临两个及以上没有状态共享或时序依赖的独立任务时触发，用于并行分发多个子智能体协同加速执行。"
+    },
+    {
+      "id": "docker-patterns",
+      "name": "docker-patterns",
+      "path": "skills/docker-patterns/SKILL.md",
+      "description": "涉及编写、优化或审查 Dockerfile、Docker Compose 编排、多阶段构建（Multi-stage Build）、容器安全加固与本地微服务环境联调时触发。规范最小化镜像、非 root 权限、依赖缓存加速与跨平台兼容。"
+    },
+    {
+      "id": "engineering-delivery-pipeline",
+      "name": "engineering-delivery-pipeline",
+      "path": "skills/engineering-delivery-pipeline/SKILL.md",
+      "description": "面向完整软件功能/需求的深度工程交付流水线编排技能。当用户要求开发/构建一个完整软件功能、全栈应用、数据库演进、微服务、复杂重构或生产级排障，或明示“深度/完整/全流程交付”等口令时激活，自动依序驱动反向审讯 → 开源调研 → 计划制定 → 测试驱动开发 → 严格核验 → 优雅收尾，全生命周期链式推进。纯概念咨询、命令/配置查询、单行脚本、≤10 行微调一律不触发。"
+    },
+    {
+      "id": "enterprise-knowledge-base",
+      "name": "enterprise-knowledge-base",
+      "path": "skills/enterprise-knowledge-base/SKILL.md",
+      "description": "当用户提出的问题涉及企业内部制度、规章规范、人事政策（如请假、报销、考勤、薪酬）、产品操作手册、系统部署规范、业务流程文档、公司战略文件、内部培训资料，或明确说出“查一下/查询/帮我找/知识库/制度/内部规定”等私域文档检索意图时触发。如果问题属于公开互联网通识或与企业内部无关，严禁触发。"
     },
     {
       "id": "executing-plans",
@@ -58,10 +88,46 @@
       "description": "代码实现已完成且所有测试均已通过，需要收尾、合并开发分支、清理工作区或确定代码集成方式时触发。"
     },
     {
+      "id": "gemini-api-dev",
+      "name": "gemini-api-dev",
+      "path": "skills/gemini-api-dev/SKILL.md",
+      "description": "使用官方 Google GenAI SDK 进行文本生成、多轮对话、多模态理解、图像生成、视频生成、流式响应、函数调用与结构化输出开发，涵盖 Python 与 TypeScript 双语言最佳实践及新版 API 迁移规范。"
+    },
+    {
+      "id": "gemini-interactions-api",
+      "name": "gemini-interactions-api",
+      "path": "skills/gemini-interactions-api/SKILL.md",
+      "description": "通过 Gemini 推荐的 Interactions API 驱动智能体交互。涵盖模型调用、持久化状态管理、流式对话、工具集成与复杂智能体主循环编排。"
+    },
+    {
+      "id": "gemini-live-api-dev",
+      "name": "gemini-live-api-dev",
+      "path": "skills/gemini-live-api-dev/SKILL.md",
+      "description": "基于 Gemini Live API 构建实时双向流式应用。涵盖 WebSocket 双向音视频与文本流传输、语音活动检测 (VAD)、原生音频处理、函数调用、会话管理、客户端瞬态 Token 鉴权与实时同传翻译。"
+    },
+    {
+      "id": "gemini-omni-flash-api",
+      "name": "gemini-omni-flash-api",
+      "path": "skills/gemini-omni-flash-api/SKILL.md",
+      "description": "使用 Gemini Omni 1.1 Flash 进行生成式视频编辑、文生视频、图生视频、首尾帧过渡平滑插值与长视频续写。包含 ffmpeg 高分辨率视频前置优化、音画解耦重构与多分支并行处理流。"
+    },
+    {
+      "id": "generative_ui",
+      "name": "generative_ui",
+      "path": "skills/generative_ui/SKILL.md",
+      "description": "在对话内联或独立工件面板中渲染富交互式 HTML/UI 组件。适用于系统架构拓扑图解、数据可视化看板、动态交互式控件、交互式教学引导等超越纯文本与 Markdown 的高审美视觉展现。"
+    },
+    {
       "id": "github_homework_researcher",
       "name": "github_homework_researcher",
       "path": "skills/github_homework_researcher/SKILL.md",
       "description": "“写代码前先调研开源优秀实践”——前置尽职调查与开源对标。杜绝闭门造车与盲目自创。在编写任何代码前，先通过开源生态调研提炼经受过验证的方案、避坑经验与设计权衡，输出技术选型、系统架构、最小可用范围与开发顺序建议。"
+    },
+    {
+      "id": "google-antigravity-sdk",
+      "name": "google-antigravity-sdk",
+      "path": "skills/google-antigravity-sdk/SKILL.md",
+      "description": "使用 Google Antigravity (AGY) 官方 SDK 设计、实现与调试自主 AI Agent 和多智能体协同系统。涵盖 Agent 生命周期管理、自定义工具暴露、状态同步与编排执行。"
     },
     {
       "id": "grill-me",
@@ -74,6 +140,12 @@
       "name": "impeccable_taste_frontend",
       "path": "skills/impeccable_taste_frontend/SKILL.md",
       "description": "涵盖前端开发、界面设计、页面重构、视觉走查、细节打磨、品牌看板生成与高审美复刻。无需记忆复杂命令，自动将日常口语精准映射为高阶设计工程指令与审美参数，输出工业级高质感前端代码。"
+    },
+    {
+      "id": "migrate-workflows",
+      "name": "migrate-workflows",
+      "path": "skills/migrate-workflows/SKILL.md",
+      "description": "自动化工作流迁移技能。扫描全局及工作区遗留的旧版自动化工作流（Workflows），将其无损平滑转换为现代标准 SKILL.md 技能工程结构，并安全归档历史配置文件。"
     },
     {
       "id": "obsidian_archive",
@@ -94,6 +166,12 @@
       "description": "收到代码审查反馈时触发。在实施修改建议前进行严谨的技术合理性核验，坚决杜绝盲目迎合或无脑修改。"
     },
     {
+      "id": "repo-security-sanitizer",
+      "name": "repo-security-sanitizer",
+      "path": "skills/repo-security-sanitizer/SKILL.md",
+      "description": "代码提交、开源发布、合并主分支或对现有代码库进行安全尽职调查时触发。执行敏感凭据脱敏扫描（API Key、Token、私钥）、依赖 CVE 漏洞体检与危险系统调用审查。"
+    },
+    {
       "id": "requesting-code-review",
       "name": "requesting-code-review",
       "path": "skills/requesting-code-review/SKILL.md",
@@ -104,6 +182,18 @@
       "name": "safe_code_repair",
       "path": "skills/safe_code_repair/SKILL.md",
       "description": "修改现有代码、排查与修复缺陷时触发。强制执行工作区安全前置、纯只读诊断复现、多因分析范围锁死、最小改动确认、双轨回归测试与一键回滚验证的高可靠闭环流程。"
+    },
+    {
+      "id": "security-audit",
+      "name": "security-audit",
+      "path": "skills/security-audit/SKILL.md",
+      "description": "对代码库、API、微服务、CLI 工具及基础组件进行多阶段深度安全审计、漏洞挖掘与渗透测试（Cloudflare 官方出品）。涵盖攻击面侦查测绘、覆盖率驱动漏洞狩猎、独立双盲证伪与结构化标准安全审计报告输出。"
+    },
+    {
+      "id": "security-review",
+      "name": "security-review",
+      "path": "skills/security-review/SKILL.md",
+      "description": "编写或审查涉及用户认证与鉴权、敏感数据处理、外部用户输入、API 接口暴露、第三方调用或支付交易等功能时触发。提供全面的 OWASP Top 10 防御范式与安全走查清单。"
     },
     {
       "id": "subagent-driven-development",
@@ -133,7 +223,7 @@
       "id": "using-superpowers",
       "name": "using-superpowers",
       "path": "skills/using-superpowers/SKILL.md",
-      "description": "在处理任务时触发。建立技能优先调度机制，在执行任何实质操作前优先检索并激活匹配的专业技能。"
+      "description": "在处理任务时触发。建立技能优先调度机制，在执行任何实质操作前优先检索并激活匹配的专业技能；深度联动交付流水线，保障复杂工程链式收敛。"
     },
     {
       "id": "verification-before-completion",
@@ -145,7 +235,7 @@
       "id": "viral-video-cover-designer",
       "name": "viral-video-cover-designer",
       "path": "skills/viral-video-cover-designer/SKILL.md",
-      "description": "根据素材、文案或资讯链接生成高点击率视频封面构想与生图提示词。提炼核心视觉爆点，生成适配主流视频与社交平台的封面方案。"
+      "description": "视频封面与海报设计专属引擎（最高优先级）。支持微机风格、纯硬件拆解、电影级社论与纯数据报道四大核心风格。内嵌逐层步进积木组装引擎与双轨工业交付协议（一体化 AI 精准出图 / 4K 纯净无字底图 + 矢量排版层），彻底解决错字与排版瑕疵。"
     },
     {
       "id": "writing-plans",
