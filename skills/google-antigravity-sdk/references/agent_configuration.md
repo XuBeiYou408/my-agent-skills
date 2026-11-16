@@ -294,7 +294,7 @@ from google.antigravity import Agent, LocalAgentConfig
 
 config = LocalAgentConfig().eval()
 
-async with Agent(config=config) as agent:
+async with Agent(config) as agent:
     response = await agent.chat("Run the test suite and fix any failing tests.")
     print(await response.text())
 ```
