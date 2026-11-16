@@ -1,7 +1,7 @@
 {
   "name": "yulin-agent-skills",
   "author": "幼麟",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "幼麟的专属 Agent 技能库与全局人设规范 (Antigravity, Gemini, Kimi, Claude Code 通用)",
   "persona": {
     "file": "GEMINI.md",
@@ -40,10 +40,22 @@
       "description": "在提出新功能构思、架构设计、技术选型，或提出“聊聊方案”、“先别写代码”、“考考我”、“反向提问”、“理清逻辑”、“头脑风暴”时触发。在动手写代码前，通过设计树与结构化轮次问答深度审讯需求与边界，未通过审批前严禁触碰业务代码。"
     },
     {
+      "id": "chrome-extensions",
+      "name": "chrome-extensions",
+      "path": "skills/chrome-extensions/SKILL.md",
+      "description": "使用 Manifest V3 最佳实践构建与发布 Chrome 浏览器扩展程序。当用户要求创建、修改、调试或了解 Chrome 扩展、浏览器插件、manifest.json、content script、service worker、popup、side panel、chrome.* API、declarativeNetRequest、omnibox、右键菜单、userScripts，或准备上架 Chrome 应用商店（审核拒审回复、权限说明撰写、隐私政策起草）时触发。"
+    },
+    {
       "id": "claude_code_agent_design_guide",
       "name": "claude_code_agent_design_guide",
       "path": "skills/claude_code_agent_design_guide/SKILL.md",
       "description": "设计、架构或构建新的智能体系统时触发。主动对比并推荐垂直一体化架构、极简微核架构以及企业私有模型融合架构，根据实际需求给出选型理据并引导分步拆解构建。"
+    },
+    {
+      "id": "customize-agent-hud",
+      "name": "customize-agent-hud",
+      "path": "skills/customize-agent-hud/SKILL.md",
+      "description": "使用 Agent HUD 工具（get_hud、draft_hud、get_hud_screenshot、discard_hud_draft、finish_hud_edit）重新排列、美化或扩展屏幕边缘刘海/简约 HUD 及其悬停面板。当用户要求修改、隐藏、显示或调整配额/余额区块、行、账号、组件（进度条、圆环、分段环、数字、图表）、面板区块、历史记录、宽度间距、自定义控件（时钟、列表、选择器、文本）以及刘海/简约模式、边缘位置、大小、光效、透明度或悬停设置时触发（所有变更先保存为草稿由用户确认）。"
     },
     {
       "id": "database-migrations",
@@ -91,7 +103,7 @@
       "id": "gemini-api-dev",
       "name": "gemini-api-dev",
       "path": "skills/gemini-api-dev/SKILL.md",
-      "description": "使用官方 Google GenAI SDK 进行文本生成、多轮对话、多模态理解、图像生成、视频生成、流式响应、函数调用与结构化输出开发，涵盖 Python 与 TypeScript 双语言最佳实践及新版 API 迁移规范。"
+      "description": "使用官方 Google GenAI SDK 进行文本生成、多轮对话、多模态理解、图像生成、视频生成、语音生成（TTS）、流式响应、函数调用与结构化输出开发，涵盖 Python 与 TypeScript 双语言最佳实践及新版 API 迁移规范。"
     },
     {
       "id": "gemini-interactions-api",
@@ -103,7 +115,7 @@
       "id": "gemini-live-api-dev",
       "name": "gemini-live-api-dev",
       "path": "skills/gemini-live-api-dev/SKILL.md",
-      "description": "基于 Gemini Live API 构建实时双向流式应用。涵盖 WebSocket 双向音视频与文本流传输、语音活动检测 (VAD)、原生音频处理、函数调用、会话管理、客户端瞬态 Token 鉴权与实时同传翻译。"
+      "description": "基于 Gemini Live API 构建实时双向流式应用，或从旧版 Live 模型迁移至 Gemini 3.8 Live。涵盖 WebSocket 双向音视频与文本流传输、语音活动检测（VAD）、后台扩展推理、异步函数调用、会话管理、客户端瞬态 Token 鉴权、实时转录与实时同传翻译。"
     },
     {
       "id": "gemini-omni-flash-api",
@@ -136,6 +148,12 @@
       "description": "提出方案想法、构思规划，或提出“考考我”、“反向提问”、“审讯我”、“挑挑刺”、“对齐需求”、“理清边界”、“先别急着写代码”时触发。通过严谨穷尽的设计树算法与结构化轮次问答反向盘问，直到厘清所有分支与隐藏假设。"
     },
     {
+      "id": "humanizer",
+      "name": "humanizer",
+      "path": "skills/humanizer/SKILL.md",
+      "description": "去除文本中的 AI 写作痕迹，在不改变原意的前提下将行文润色得更加自然地道。在编辑或审阅文案时识别并修正典型 AI 表达习惯：如“不是X而是Y”对立句式、单句式金句收尾、刻意的三段式排比、滥用破折号、夸大宣传用语、营销腔、AI 高频套话、过度加粗标签与冗余填充词（基于维基百科“AI 写作特征”总结）。"
+    },
+    {
       "id": "impeccable_taste_frontend",
       "name": "impeccable_taste_frontend",
       "path": "skills/impeccable_taste_frontend/SKILL.md",
@@ -148,10 +166,22 @@
       "description": "自动化工作流迁移技能。扫描全局及工作区遗留的旧版自动化工作流（Workflows），将其无损平滑转换为现代标准 SKILL.md 技能工程结构，并安全归档历史配置文件。"
     },
     {
+      "id": "modern-web-guidance",
+      "name": "modern-web-guidance",
+      "path": "skills/modern-web-guidance/SKILL.md",
+      "description": "现代 Web 开发最佳实践检索工具。编写或修改任何 HTML/CSS 与客户端 JS 任务时必须优先执行。适用于弹窗/对话框/Popover、表格、暗黑模式、锚点定位、容器查询、视图过渡动画、滚动驱动动画、表单校验与自动填充、无障碍、自定义下拉框、滚动条、Core Web Vitals（LCP/INP/CLS）、图片/脚本优先级、前端安全、Passkeys、HTML 消毒、Web Components、日期时区、浏览器内置 AI 及 WebAssembly 等场景；不用于后端接口、数据库 ORM、CI/CD 运维脚本或工程构建工具杂项。"
+    },
+    {
       "id": "obsidian_archive",
       "name": "obsidian_archive",
       "path": "skills/obsidian_archive/SKILL.md",
       "description": "将当前对话、技术研讨或方案成果归档至个人知识库。自动提取上下文脉络，支持多级目录树的递归审查与卡片复用，在模块目录下生成结构化全景索引卡片与双语解构沉淀。"
+    },
+    {
+      "id": "pachat",
+      "name": "pachat",
+      "path": "skills/pachat/SKILL.md",
+      "description": "接入并使用面向个人 AI Agent 的群聊协作平台 Pachat（https://pachat.ai）。当用户提及 Pachat 或相关群组、收到 Pachat 唤醒通知，或执行定时 Pachat 巡检时触发，用于检查收件箱、代用户阅读或发送群消息、创建或加入群组以及检索公开群组。"
     },
     {
       "id": "ponytail",
@@ -248,6 +278,23 @@
       "name": "writing-skills",
       "path": "skills/writing-skills/SKILL.md",
       "description": "创建新技能、修改现有技能或在部署前验证技能有效性时触发。提供专业的技能架构设计规范与最佳实践指导。"
+    }
+  ],
+  "personas": [
+    {
+      "target": "Antigravity / Gemini",
+      "file": "GEMINI.md",
+      "description": "Antigravity 全栈专家研发与执行规范 (v2.0)，包含会话命名主动推荐与单步追问原则"
+    },
+    {
+      "target": "Claude Code",
+      "file": "personas/CLAUDE.md",
+      "description": "Claude Code 全栈专家研发与执行规范 (v2.0)"
+    },
+    {
+      "target": "OpenAI Codex",
+      "file": "personas/AGENTS.md",
+      "description": "Codex 全局交互与工程偏好规范"
     }
   ]
 }
