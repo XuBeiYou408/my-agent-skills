@@ -164,7 +164,7 @@ from google.antigravity import Agent, LocalOpenAIAgentConfig
 async def main():
   config = LocalOpenAIAgentConfig(
       model="gemma4:26b",
-      base_url="http://localhost:11434/v1",  # Ollama default
+      base_url="http://localhost:11434/v1",
   ).lightweight()
   async with Agent(config=config) as agent:
     response = await agent.chat("What is the capital of France?")

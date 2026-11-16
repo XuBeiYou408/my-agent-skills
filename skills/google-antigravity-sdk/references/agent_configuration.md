@@ -294,7 +294,7 @@ from google.antigravity import Agent, LocalAgentConfig
 
 config = LocalAgentConfig().eval()
 
-async with Agent(config) as agent:
+async with Agent(config=config) as agent:
     response = await agent.chat("Run the test suite and fix any failing tests.")
     print(await response.text())
 ```
@@ -370,3 +370,4 @@ config = LocalAgentConfig(
 > When `compaction_config` is omitted (or fields are left unset), the backend's default threshold is used.
 
 For a full guide and code examples, see [compaction.md](../../examples/getting_started/compaction.md).
+
