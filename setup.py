@@ -16,20 +16,30 @@ def setup():
     user_home = Path.home()
     current_dir = Path(__file__).parent.resolve()
     
-    # 1. 部署全局人设 (Global Persona / Rules)
-    persona_src = current_dir / "GEMINI.md"
-    if persona_src.exists():
-        persona_dests = [
+    # 1. 部署全局人设与规范 (Global Personas & Rules)
+    persona_mappings = [
+        (current_dir / "GEMINI.md", [
             user_home / ".gemini" / "antigravity" / "scratch" / "GEMINI.md",
-            user_home / ".gemini" / "GEMINI.md"
-        ]
+            user_home / ".gemini" / "GEMINI.md",
+        ]),
+        (current_dir / "personas" / "CLAUDE.md", [
+            user_home / ".claude" / "CLAUDE.md",
+            user_home / "CLAUDE.md",
+        ]),
+        (current_dir / "personas" / "AGENTS.md", [
+            user_home / ".codex" / "AGENTS.md",
+        ]),
+    ]
+    for persona_src, persona_dests in persona_mappings:
+        if not persona_src.exists():
+            continue
         for dest in persona_dests:
             try:
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(persona_src, dest)
-                print(f"  ✨ 已成功部署全局人设规范: -> {dest}")
+                print(f"  ✨ 已成功部署人设规范 ({persona_src.name}): -> {dest}")
             except Exception as e:
-                print(f"  ⚠️ 部署全局人设到 {dest} 失败: {e}")
+                print(f"  ⚠️ 部署人设规范到 {dest} 失败: {e}")
 
     # 2. 部署技能库 (Skills)
     global_skills_dir = user_home / ".gemini" / "config" / "skills"
